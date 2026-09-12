@@ -1,0 +1,76 @@
+.naranja{
+    background-color: #F7931E;
+    color: white;
+}
+
+.text-gris {
+  color: #b6b4b4 !important;
+}
+
+
+.btn-alltec {
+    background-color: #F7931E;
+    color: white;
+    border: none;
+}
+
+.btn-alltec:hover {
+    background-color: #ffb871;
+    color: white;
+}
+
+.jumbotrom {
+    background-color: white !important;
+    color: #555555;
+    padding: 15px;
+    border-top: 5px solid #F7931E;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.jumbotrom h2 {
+    color: #555555;
+    font-weight: bold;
+}
+
+.jumbotrom p {
+    color: #777777;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card {
+    height: 100%;
+}
+
+b {
+    font-size: 75px;
+    font-family: 'Arial Black', ;
+    COLOR: #535353;
+}
+
+f {
+    font-size: 75px;
+    font-family: 'Arial', ;
+    color: #F7931E;
+}
+
+small {
+    font-size: 12PX;
+    color: #757575;
+}
+
+
+.logo-title {
+    line-height: 0.8; /* Ajusta el interlineado para que el subtítulo esté más cerca del título */
+}
+
+.logo-subtitle {
+    line-height: 0; /* Ajusta el interlineado para que el subtítulo esté más cerca del título */
+    display: block;
+
+}
+
