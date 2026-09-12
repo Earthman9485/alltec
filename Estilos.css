@@ -7,6 +7,9 @@
   color: #b6b4b4 !important;
 }
 
+.navbar{
+    height: 150px
+}
 
 .btn-alltec {
     background-color: #F7931E;
@@ -20,22 +23,26 @@
 }
 
 .jumbotrom {
-    background-color: white !important;
     color: #555555;
-    padding: 15px;
+    padding: 30px;
     border-top: 5px solid #F7931E;
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 25%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-align: center;
 }
 
-.jumbotrom h2 {
-    color: #555555;
-    font-weight: bold;
+.jumbotrom h1 {
+    font-size: px;
+    font-weight: bold; 
 }
 
-.jumbotrom p {
-    color: #777777;
-}
 
 .card-img-top {
     height: 300px;
