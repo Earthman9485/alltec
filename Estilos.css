@@ -28,11 +28,23 @@
      background-color: #ffffff;
 }
 .ms-auto{
-    width: 700px;
+    width: 65%;
     height: 35px;
     border-radius: 20px;
     background-color: #f8e7d2;
-    padding-left: 300px;
+
+}
+
+/* Pantallas pequeñas (Celulares) */
+@media (max-width: 990px) {
+    .navbar-nav {
+        height: 175px;
+        background-color: #f8e7d2;
+        border-radius: 20px;
+        padding: 4px 15px;
+        margin-left: auto;
+
+    }
 }
 
 .jumbotrom {
@@ -99,12 +111,6 @@ small {
 
 }
 
-.footer_1{
- padding-left:400px;
-}
-.footer_2{
-    text-align: center;
-}
 h1{
     font-weight: bold; 
     text-align: center;
