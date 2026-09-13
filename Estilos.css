@@ -21,13 +21,24 @@
     background-color: #ffb871;
     color: white;
 }
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+     background-color: #ffffff;
+}
+.ms-auto{
+    width: 700px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #f8e7d2;
+    padding-left: 300px;
+}
 
 .jumbotrom {
-    color: #555555;
     padding: 30px;
     border-top: 5px solid #F7931E;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    width: 25%;
+    width: 35%;
     height: 350px;
     background-color: rgba(0, 0, 0, 0.5) !important;
     position: absolute; 
@@ -78,6 +89,13 @@ small {
 .logo-subtitle {
     line-height: 0; /* Ajusta el interlineado para que el subtítulo esté más cerca del título */
     display: block;
+
+}
+
+.negro{
+    padding-left: 10px; 
+    color:black;
+    text-decoration: none;
 
 }
 
