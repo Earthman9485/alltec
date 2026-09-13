@@ -38,7 +38,7 @@
 .jumbotrom {
     padding: 30px;
     border-top: 5px solid #F7931E;
-    width: 35%;
+    width: 600px;
     height: 350px;
     background-color: rgba(0, 0, 0, 0.5) !important;
     position: absolute; 
@@ -99,3 +99,18 @@ small {
 
 }
 
+.footer_1{
+ padding-left:400px;
+}
+.footer_2{
+    text-align: center;
+}
+h1{
+    font-weight: bold; 
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px; /* Esto deja un espacio libre arriba para que no se tape con el menú */
+}
