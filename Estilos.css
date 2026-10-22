@@ -8,7 +8,7 @@
 }
 
 .navbar{
-    height: 125px
+    height: 150px
 }
 
 .btn-alltec {
@@ -32,19 +32,9 @@
     height: 35px;
     border-radius: 20px;
     background-color: #f8e7d2;
-    padding-left: 175px;
+    padding-left: 150px;
 }
 
-/* Pantallas pequeñas (Celulares) */
-@media (max-width: 990px) {
-    .navbar-nav {
-        height: 175px;
-        background-color: #f8e7d2;
-        border-radius: 20px;
-        padding: 4px 15px;
-        margin-left: auto;
-    }
-}
 
 .jumbotrom {
     padding: 30px;
