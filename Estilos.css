@@ -1,111 +1,156 @@
-.naranja{
-    background-color: #F7931E;
-    color: white;
-}
-
-.text-gris {
-  color: #b6b4b4 !important;
-}
-
-.navbar{
-    height: 150px
-}
-
-.btn-alltec {
-    background-color: #F7931E;
-    color: white;
-    border: none;
-}
-
-.btn-alltec:hover {
-    background-color: #ffb871;
-    color: white;
-}
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-     background-color: #ffffff;
-}
-.ms-auto{
-    width: 65%;
-    height: 35px;
-    border-radius: 20px;
-    background-color: #f8e7d2;
-    padding-left: 150px;
-}
-
-
-.jumbotrom {
-    padding: 30px;
-    border-top: 5px solid #F7931E;
-    width: 600px;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white; 
-    text-align: center;
-}
-
-.jumbotrom h1 {
-    font-size: px;
-    font-weight: bold; 
-}
-
-
-.card-img-top {
-    height: 300px;
-    object-fit: cover;
-}
-
-.card {
-    height: 100%;
-}
-
-b {
-    font-size: 75px;
-    font-family: 'Arial Black', ;
-    COLOR: #535353;
-}
-
-f {
-    font-size: 75px;
-    font-family: 'Arial', ;
-    color: #F7931E;
-}
-
-small {
-    font-size: 12PX;
-    color: #757575;
-}
-
-
-.logo-title {
-    line-height: 0.8; /* Ajusta el interlineado para que el subtítulo esté más cerca del título */
-}
-
-.logo-subtitle {
-    line-height: 0; /* Ajusta el interlineado para que el subtítulo esté más cerca del título */
-    display: block;
-
-}
-
-.negro{
-    padding-left: 10px; 
-    color:black;
-    text-decoration: none;
-
-}
-
-h1{
-    font-weight: bold; 
-    text-align: center;
+/* ===================================================
+   VARIABLES DE MARCA Y CONFIGURACIÓN GLOBAL
+   =================================================== */
+:root {
+  --naranja-alltec: #F7931E;
+  --naranja-capsula: #f8e7d2; /* Tono beige/naranja claro de la cápsula */
+  --gris-oscuro-alltec: #333333;
+  --negro-alltec: #000000;
+  --blanco-alltec: #ffffff;
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 200px; /* Esto deja un espacio libre arriba para que no se tape con el menú */
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px; /* Evita que el menú fijo tape los títulos al navegar */
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--gris-oscuro-alltec);
+  background-color: #F8F9FA;
+}
+
+/* ===================================================
+   1. BARRA DE NAVEGACIÓN (NAVBAR)
+   =================================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--blanco-alltec) !important;
+  min-height: 120px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E9ECEF;
+}
+
+/* Cápsula de enlaces centrada (Fondo Naranja Claro) */
+.ms-auto {
+  border-radius: 25px;
+  background-color: var(--naranja-capsula);
+  padding: 6px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav-link {
+  color: var(--gris-oscuro-alltec) !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 4px 12px !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--naranja-alltec) !important;
+}
+
+/* Íconos de Redes Sociales */
+.social-icons .negro {
+  color: var(--negro-alltec);
+  font-size: 1.25rem;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icons .negro:hover {
+  color: var(--naranja-alltec);
+  transform: translateY(-2px);
+}
+
+/* Botón Personalizado Alltec */
+.btn-alltec {
+  background-color: var(--naranja-alltec);
+  color: var(--blanco-alltec);
+  border: none;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-alltec:hover {
+  background-color: #ffb871;
+  color: var(--blanco-alltec);
+}
+
+/* ===================================================
+   2. SECCIÓN BANNER (HERO)
+   =================================================== */
+.banner-img {
+  position: relative;
+  background: url('Images/slider-image1.jpeg') center/cover no-repeat;
+  height: 600px;
+}
+
+/* Cuadro transparente sobre la imagen principal */
+.jumbotrom {
+  padding: 30px;
+  border-top: 5px solid var(--naranja-alltec);
+  width: 90%;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--blanco-alltec);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.jumbotrom h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/* ===================================================
+   3. TARJETAS DE SERVICIOS
+   =================================================== */
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilos para textos de marca */
+b {
+  font-size: 75px;
+  font-family: 'Arial Black', sans-serif;
+  color: var(--gris-oscuro-alltec);
+}
+
+f {
+  font-size: 75px;
+  font-family: 'Arial', sans-serif;
+  color: var(--naranja-alltec);
+}
+
+small {
+  font-size: 12px;
+  color: #757575;
+}
+
+/* ===================================================
+   4. PIE DE PÁGINA (FOOTER)
+   =================================================== */
+footer {
+  background-color: #333333 !important;
 }
