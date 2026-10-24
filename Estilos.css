@@ -154,3 +154,17 @@ small {
 footer {
   background-color: #333333 !important;
 }
+
+/*Whatsapp Flotante*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 999;
+  text-decoration: none;
+}
